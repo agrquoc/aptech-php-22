@@ -10,14 +10,11 @@ $sql = "SELECT * from webnganhang.quanlyuser
 WHERE USER ='$userlog'
 AND PASS = '$pass';";
 $result = mysqli_query($connect,$sql);
-
-mysqli_num_rows($result);
+$row= mysqli_num_rows($result);
 if (mysqli_num_rows($result)> 0) {
-    header("Location: http://localhost/apteck-php-22-quoc/php/04_20191216/baitap/trangchu.php");
-    die();
+    header("Location: http://localhost/aptech-php-22-quoc/php/04-20191216/baitap/trangchu.php");
 }else{
-    header("Location: http://localhost/apteck-php-22-quoc/php/04_20191216/baitap/dangky.php");
-    die();
+    header("Location: http://localhost/aptech-php-22-quoc/php/04-20191216/baitap/dangky.php");
 };
 mysqli_close($connect);
 ?>

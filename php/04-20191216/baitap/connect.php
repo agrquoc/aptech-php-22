@@ -2,10 +2,11 @@
 $server ="localhost";
 $username ="root";
 $passworddatabase ="";
-$connect=mysqli_connect($server,$username,$passworddatabase);
-if(!$connect){
-    echo "Kết nối không thành công";
+$database ="webnganhang";
+$connect=mysqli_connect($server,$username,$passworddatabase,$database);
+if (!$connect){
+    echo "thất bại";
 }else{
-    echo "kết nối thành công";
+    echo "thành công";
 }
 ?>

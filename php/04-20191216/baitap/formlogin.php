@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <form action="check.php" method="POST" target="_blank">
+    <form action="check.php" method="POST">
         <H1>ĐĂNG NHẬP NGƯỜI DÙNG</H1>
        <label>Tên đăng nhập: </label>
        <input type="text" placeholder="User name" name="Username"><br>
