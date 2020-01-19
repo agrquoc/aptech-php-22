@@ -3,12 +3,12 @@
     <div class="col-12 px-0">
       <div class="d-flex flex-row align-items-center">
         <div class="col-1 pl-0">
-          <form action="{{route('articles.index')}}" method="get">
+          <form action="{{route('Articles.index')}}" method="get">
             <button class="btn btn-primary rounded-0 font-weight-bold">Home</button>
           </form>
         </div>
         <div class="col-10">
-          <h1 class="text-center font-weight-bold text-uppercase">user crud laravel</h1>
+          <h1 class="text-center font-weight-bold text-uppercase">BÀI THI CUỐI KỲ CRUD LARAVEL</h1>
         </div>
         <div class="col-1"></div>
       </div>

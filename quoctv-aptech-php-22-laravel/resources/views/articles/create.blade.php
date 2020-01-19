@@ -6,15 +6,15 @@ create page
 <div class="container mt-3">
   <div class="d-flex flex-row">
     <div class="col-12 px-0">
-      <form action="{{route('articles.store')}}" method="post">
+      <form action="{{route('Articles.store')}}" method="post">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
         <div class="form-group ">
           <label class="text-uppercase font-weight-bold" for="name">Tiêu đề</label>
           <input type="text" class="form-control rounded-0" id="name" placeholder="title" name="title">
         </div>
         <div class="form-group ">
-          <label class="text-uppercase font-weight-bold" for="email">Description</label>
-          <input type="email" class="form-control rounded-0" id="aaaa" placeholder="Description" name="descriptiom">
+          <label class="text-uppercase font-weight-bold" >Description</label>
+          <input type="text" class="form-control rounded-0" id="description" placeholder="Description" name="description">
         </div>
         <div class="form-group ">
         </div>

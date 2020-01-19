@@ -3,11 +3,11 @@
     <div class="col-12">
       <div class="d-flex justify-content-between align-items-center">
         <span class="text-uppercase text-muted">
-          user crud laravel
+          BÀI THI CUỐI KỲ PHP 22
         </span>
-        <form action="{{route('articles.create')}}" method="get">
+        <form action="{{route('Articles.create')}}" method="get">
           <button type="submit" class="btn btn-info text-uppercase font-weight-bold rounded-0">
-            create a new user
+            TẠO BÀI MỚI
           </button>
         </form>
       </div>

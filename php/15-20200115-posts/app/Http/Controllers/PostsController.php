@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Article;
 
-class ArticleController extends Controller
+class PostsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +13,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $Articles = Article::paginate(10);
-        return view(
-            'Articles.index',
-            ['Articles' => $Articles]
-        );
+        //
     }
 
     /**
@@ -28,7 +23,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('Articles.create');
+        //
     }
 
     /**
@@ -39,15 +34,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        {
-            $article = new Article();
-            $slug=$request->title;
-            $article->title = $request->title;
-            $article->slug = str_slug($slug,'-');
-            $article->description = $request->description;
-            $article->save();
-            return redirect()->route('Articles.index');
-        }
+        //
     }
 
     /**
@@ -58,11 +45,7 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        $Articles = Article::find($id);
-        return view(
-            'Articles.show',
-            ['Articles' => $Articles]
-        );
+        //
     }
 
     /**
@@ -73,11 +56,7 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        $Articles = Article::find($id);
-        return view(
-            'Articles.edit',
-            ['Articles' => $Articles]
-        );
+        //
     }
 
     /**
@@ -89,13 +68,7 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $Articles = Article::find($id);
-        $slug=$request->title;
-        $Articles->title = $request->title;
-        $Articles->slug = str_slug($slug,'-');
-        $Articles->description = $request->description;
-        $Articles->save();
-        return redirect()->route('Articles.index');
+        //
     }
 
     /**
@@ -106,8 +79,6 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        $Articles = Article::find($id);
-        $Articles->delete();
-        return redirect()->route('Articles.index');
+        //
     }
 }

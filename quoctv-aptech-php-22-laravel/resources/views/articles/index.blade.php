@@ -22,29 +22,29 @@ index page
             <td>{{$Article->title}}</td>
             <td>{{$Article->description}}</td>
             <td class="d-flex align-items-center justify-content-around">
-              <form action="{{route('articles.show',$Article->id)}}" method="get">
+              <form action="{{route('Articles.show',$Article->id)}}" method="get">
                 <button class="btn btn-sm btn-primary rounded-0">
                   Show
                 </button>
               </form>
-              <form action="{{route('articles.edit',$article->id)}}" method="get">
+              <form action="{{route('Articles.edit',$Article->id)}}" method="get">
                 <button class="btn btn-sm btn-warning rounded-0">
                   Edit
                 </button>
               </form>
-              <form action="{{route('articles.destroy',$article->id)}}" method="post">
+              <form action="{{route('Articles.destroy',$Article->id)}}" method="post">
                 <input type="hidden" name="_token" value="{{csrf_token()}}">
                 <input type="hidden" name="_method" value="delete">
                 <button class="btn btn-sm btn-danger rounded-0">
                   Delete
                 </button>
-              </form>s
+              </form>
             </td>
           </tr>
           @endforeach
         </tbody>
       </table>
-      <div class="d-flex justify-content-center">{{$Article->links()}}</div>
+      <div class="d-flex justify-content-center">{{$Articles->links()}}</div>
     </div>
   </div>
 </div>
